@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.sifat.newsapp"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.sifat.newsapp"
