@@ -2,6 +2,8 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("com.google.devtools.ksp")
+    id("androidx.navigation.safeargs.kotlin")
+
 }
 
 android {
@@ -81,4 +83,8 @@ dependencies {
     // Optional - Dependency Injection (Dagger/Hilt)
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
+    implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
+    implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
+
+
 }
