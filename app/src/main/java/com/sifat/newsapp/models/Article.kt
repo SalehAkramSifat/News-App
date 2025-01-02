@@ -3,6 +3,7 @@ package com.sifat.newsapp.models
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.io.Serial
+import com.sifat.newsapp.models.Article
 import java.io.Serializable
 
 

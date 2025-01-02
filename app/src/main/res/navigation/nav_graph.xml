@@ -7,11 +7,10 @@
     <fragment
         android:id="@+id/articleFragment"
         android:name="com.sifat.newsapp.ui.fragments.ArticleFragment"
-        android:label="ArticleFragment" >
-
+        android:label="Article">
         <argument
             android:name="article"
-            app:argType="com.sifat.newsapp.models.Article"/>
+            app:argType="com.sifat.newsapp.models.Article" />
     </fragment>
 
     <fragment
@@ -22,6 +21,7 @@
             android:id="@+id/action_favoriteFragment_to_articleFragment"
             app:destination="@id/articleFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/headlineFragment"
         android:name="com.sifat.newsapp.ui.fragments.HeadlineFragment"
@@ -30,6 +30,7 @@
             android:id="@+id/action_headlineFragment_to_articleFragment"
             app:destination="@id/articleFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/searchFragment"
         android:name="com.sifat.newsapp.ui.fragments.SearchFragment"
