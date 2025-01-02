@@ -33,7 +33,6 @@ class HeadlineFragment : Fragment() {
     lateinit var itemHeadlineError: CardView
     lateinit var binding: FragmentHeadlineBinding
 
-    // স্ক্রলিং এবং পেজিনেশন ব্যবস্থাপনা
     var isError = false
     var isLoading = false
     var isLastPage = false
@@ -50,7 +49,6 @@ class HeadlineFragment : Fragment() {
         newsViewModel = (activity as NewsActivity).newsViewModel
         setupHeadlinesRecycler()
 
-        // News item ক্লিক করলে ArticleFragment তে যাবে
         newsAdapter.setOnItemClickListener {
             val bundle = Bundle().apply {
                 putSerializable("article", it)
@@ -59,7 +57,6 @@ class HeadlineFragment : Fragment() {
         }
 
 
-        // ViewModel থেকে headlines গ্রহণ
         newsViewModel.headlines.observe(viewLifecycleOwner, Observer { response ->
             when (response) {
                 is Resource.Success<*> -> {
